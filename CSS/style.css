@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button{
+    background-color: #e0af38;
+    padding: 5px 15px;
+    border: none;
+}
+
+button a{
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.intro{
+    background-image: url(../Images/Introduction.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.intro .for_click .box{
+    background-color: #3e3e3e;
+    padding: 90px;
+}
+
+.amenities{
+    background-color: #3e3e3e;
+}
+
+.amenities h4{
+    background-color: #e0af38;
+    color: #ffffff;
+    padding: 12px 0px;
+}
+
+.gallery{
+    background-image: url(../Images/Gallery_bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.floor_plans{
+    background-color: #3e3e3e;
+}
+
+.floor_plans h3{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 14px;
+}
+
+.contact_details{
+    background-image: url(../Images/contact-bg.png);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+footer{
+    background-color: #e0af38;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
