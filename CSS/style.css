@@ -1,71 +1,76 @@
 *{
     padding: 0px;
     margin: 0px;
-    list-style: none;
     box-sizing: border-box;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+}
+
+.pye-5{
+    padding: 5rem 0rem !important;
 }
 
 button{
-    background-color: #e0af38;
+    background-color: #fa8501;
     padding: 5px 15px;
     border: none;
 }
 
 button a{
+    text-decoration: none !important;
     color: #ffffff !important;
-    text-decoration: none;
+
 }
 
-.intro{
-    background-image: url(../Images/Introduction.jpg);
+.banner{
+    background-image: url(../Images/Banner_bg.webp);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    margin-top: 6rem;
+    height: 600px;
 }
 
-.intro .for_click .box{
-    background-color: #3e3e3e;
-    padding: 90px;
+.banner .col-md-6{
+    height: 600px;
+}
+
+.banner p{
+    font-weight: 900;
+}
+
+.banner h1{
+    font-weight: 900;
+}
+
+.banner .text-box{
+    background-color: #5E5E5E;
+    padding: 30px;
 }
 
 .amenities{
-    background-color: #3e3e3e;
+    background-color: #ffd7aa;
 }
 
-.amenities h4{
-    background-color: #e0af38;
-    color: #ffffff;
-    padding: 12px 0px;
+.amenities .box{
+    background-color: #ffffff;
+    padding: 60px 30px;
 }
 
 .gallery{
-    background-image: url(../Images/Gallery_bg.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #ffd7aa;
 }
 
-.floor_plans{
-    background-color: #3e3e3e;
+.testimonial{
+    background-color: #ffd7aa;
 }
 
-.floor_plans h3{
-    color: #ffffff;
-    text-align: center;
-    padding-top: 14px;
+.contact{
+    background:linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.3) ), url(../Images/Banner_contact.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
-.contact_details{
-    background-image: url(../Images/contact-bg.png);
-    background-repeat: repeat;
-    background-position: center;
-}
-
-footer{
-    background-color: #e0af38;
-}
-
-footer p{
-    margin-bottom: 0px;
+.contact h2{
+    font-weight: 600;
+    color: #fff;
 }

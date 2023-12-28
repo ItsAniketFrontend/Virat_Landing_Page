@@ -1,426 +1,326 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virat Landing Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Virat Landing Page</title>
-  <link rel="stylesheet" href="CSS/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
-<body>
-
-  <header>
-    <div class="container-fluid">
-      <div class="row" style=" position: absolute;    text-align: center;
-            width: 100%;
-            height: 97px;
-            padding: 8px 0;   z-index: 9;
-            background: rgb(0 0 0 / 39%); text-align: center;">
-        <div class="col-12">
-          <img src="Images/logo.png" height="100" alt="">
-        </div>
-      </div>
-    </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark text-light"
-      style="background-color:black!important;width: 100%;">
-      <div class="container-fluid">
-        <a class="navbar-brand" href=""><img style="height:50px;" src="Images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-          <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0 d-md-flex d-block flex-row mx-md-auto mx-0">
-            <li class="nav-item">
-              <a style="width:100%;" class="nav-link" aria-current="page" href="#About-The-Project"><b>About The
-                  Project</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""><b>Top Highlights</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""><b>Amenities</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""><b>Layout Plan</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""><b>Project Enquiry</b></a>
-            </li>
-          </ul>
-          <!-- <form class="d-flex">
-            <button class="btn btn-outline-light" type="submit"><a class="buttonlink"
-                style="text-decoration:none; color:white;" download="" href="">Download Brochure</a></button>
-          </form> -->
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Banner-->
-    <section class="banner">
-      <div class="container-fluid px-0">
-        <img src="Images/Banner.png" class="img-fluid" alt="">
-      </div>
-    </section>
-
-    <section class="intro py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <img src="Images/Virat_Intro.png" class="img-fluid" alt="">
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+  </head>
+  <body>
+    <header>  
+      <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #fff;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/logo.png" width="70px" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-3">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Amenities</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Price</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Location</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-6">
-            <h1>Virat Krishnav: Your Dream Home Awaits</h1>
-            <p>Virat Krishnav is a premium residential project of the Virat Group that offering a luxurious residential
-              flat for sale in Jaipur and a contemporary living experience. We pride ourselves on our years of
-              experience in real estate, which sets us apart and makes us unique in the industry.</p>
-            <p>Virat Krishnav offers a range of meticulously designed developed 2 BHK apartments, 3 BHK apartments, and
-              4 BHK apartments and 4 and 5 BHK Duplex apartments in the heart of Jaipur's bustling Vaishali Nagar with
-              modern amenities and lush green surroundings, creating an ideal environment for families seeking comfort
-              and convenience. With its prime location, quality construction, and thoughtful design, Virat Krishnav
-              promises to provide a harmonious blend of comfort and style for its residents.</p>
-            <div class="row">
-              <div class="col-md-6 col-12">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center flex-column">
+                <div class="text-box">
+                  <p class="text-white">Elevate Your Lifestyle With Virat Krishnav</p>
+                  <h1 class="text-white">2/3BHK Luxury Floors</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="intro pye-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+                <h1>Virat Krishnav: Your Dream Home Awaits</h1>
+                <p>Virat Krishnav offers a range of meticulously designed developed 2 BHK apartments, 3 BHK apartments, and 4 BHK apartments and 4 and 5 BHK Duplex apartments in the heart of Jaipur's bustling Vaishali Nagar with modern amenities and lush green surroundings, creating an ideal environment for families seeking comfort and convenience. With its prime location, quality construction, and thoughtful design, Virat Krishnav promises to provide a harmonious blend of comfort and style for its residents.</p>
                 <ul>
                   <li>On Call Medical Facilities</li>
                   <li>In House Shopping Center</li>
-                  <li>High Tech & Ultra-Modern Clubhouse</li>
-                  <li>Vaastu Oriented Apartments</li>
-                  <li>Centrally Ac Ground Floor.</li>
-                  <li>Valet Parking for Guest.</li>
-                  <li>Gas Pipe Line.</li>
-                  <li>STP Plant.</li>
+                  <li>Roof Top Tennis Court</li>
+                  <li>Reserved Car Parking For Each Plant</li>
+                  <li>High tech & Ultra-Modern Clubhouse.</li>
                 </ul>
+            </div>
+            <div class="col-md-6">
+              <img src="Images/intro.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="amenities pye-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2>Luxurious Amenities</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Swimming Pool</h3>
               </div>
-              <div class="col-md-6 col-12">
-                <ul>
-                  <li>Roof Top Deck Pool.</li>
-                  <li>Convenient transport facilities.</li>
-                  <li>Roof Top Cafeteria.</li>
-                  <li>Roof Top Tennis Court.</li>
-                  <li>Wi-ﬁ Zone.</li>
-                  <li>100% Power backup (Silent DG sets for lifts & common areas).</li>
-                  <li>Reserved Car Parking for each Flat.</li>
-                  <li>Earth Quake Resistant Framed Structure.</li>
-                </ul>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Landscape Garden</h3>
               </div>
-              <div class="col-12 d-flex justify-content-center">
-                <button><a href="">Contact Our Team</a></button>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Gymnasium</h3>
+              </div>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Temple</h3>
+              </div>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Basketball Court</h3>
+              </div>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Party Lawn</h3>
+              </div>
+            </div>
+            <div class="col-md-3 my-2 text-center">
+              <div class="box">
+                <h3>Kids Play Area</h3>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container for_click py-5">
-        <div class="row">
-          <div class="col-md-4 my-3">
-            <div class="box text-center">
-              <div class="img_wrap pb-2">
-                <img src="Images/telephone-call.png" class="img-fluid" alt="">
-              </div>
-              <button><a href="" style="text-decoration: none; color: #fff;">Click Here</a></button>
+      </section>
+      <section class="floor_plans pye-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>Floor Plans</h2>
             </div>
           </div>
-          <div class="col-md-4 my-3">
-            <div class="box text-center">
-              <div class="img_wrap pb-2">
-                <img src="Images/file.png" class="img-fluid" alt="">
-              </div>
-              <button><a href="" style="text-decoration: none; color: #fff;">Click Here</a></button>
-            </div>
-          </div>
-          <div class="col-md-4 my-3">
-            <div class="box  text-center">
-              <div class="img_wrap pb-2">
-                <img src="Images/location-mark.png" class="img-fluid" alt="">
-              </div>
-              <button><a href="" style="text-decoration: none; color: #fff;">Click Here</a></button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box">
 
-    <section class="amenities py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="text-white">Our Amenities</h2>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Basketball_arena.webp" class="img-fluid" alt="">
-              <h4>Basketball Arena</h4>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Cricket_pitch_net.webp" class="img-fluid" alt="">
-              <h4>Cricket Pitch Net</h4>
+            <div class="col-md-4">
+              <div class="box">
+                
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Deck_pool_with_screen.webp" class="img-fluid" alt="">
-              <h4>Deck Pool With Screen</h4>
+            <div class="col-md-4">
+              <div class="box">
+                
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Gazebo.webp" class="img-fluid" alt="">
-              <h4>Gazebo</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Guest_lounge.webp" class="img-fluid" alt="">
-              <h4>Guest Lounge</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/High_tech_gymnasium.webp" class="img-fluid" alt="">
-              <h4>High Tech Gymnasium</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Jacuzzi.webp" class="img-fluid" alt="">
-              <h4>Jacuzzi</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Kids_play_area.webp" class="img-fluid" alt="">
-              <h4>Kids Play Area</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/mini_theatere.webp" class="img-fluid" alt="">
-              <h4>Mini Theater</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Multipurpose_hall.webp" class="img-fluid" alt="">
-              <h4>Multipupose Hall</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Party_lawn.webp" class="img-fluid" alt="">
-              <h4>Party Lawn</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Reception.webp" class="img-fluid" alt="">
-              <h4>Reception</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Smart_card_entry.webp" class="img-fluid" alt="">
-              <h4>Smart Card Entry</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Temple.webp" class="img-fluid" alt="">
-              <h4>Temple</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center my-4">
-            <div class="box">
-              <img src="Images/Swimming_pool.webp" class="img-fluid" alt="">
-              <h4>Swimming Pool</h4>
+            <div class="col-12 d-flex justify-content-center">
+              <button><a href="">Price Breakup</a></button>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="gallery py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Gallery</h2>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
+      </section>
+      <section class="gallery pye-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Gallery</h2>
+            </div>
+            <div class="col-md-3 my-3">
               <img src="Images/Gallery1.jpg" class="img-fluid" alt="">
             </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery2.jpg" class="img-fluid" alt="">
+            <div class="col-md-3 my-3">
+              <img src="Images/Gallery2.webp" class="img-fluid" alt="">
             </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery3.jpg" class="img-fluid" alt="">
+            <div class="col-md-3 my-3">
+              <img src="Images/Gallery3.png" class="img-fluid" alt="">
             </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery4.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery5.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery6.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery7.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery8.jpg" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="box">
-              <img src="Images/Gallery9.jpg" class="img-fluid" alt="">
+            <div class="col-md-3 my-3">
+              <img src="Images/Gallery4.jpg" class="img-fluid" alt="">  
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="floor_plans py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="text-white">Floor Plans</h2>
-            <p class="text-white">View Floor Plans & Apartment Types</p>
-          </div>
-          <div class="col-md-3">
-            <div class="box" style="height: 350px; background-color: #e0af38;">
-              <img src="Images/2bhk.jpg" width="100%" height="280" alt="">
-              <h3>2BHK</h3>
+      </section>
+      <section class="premium_connectivity pye-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex justify-content-center">
+              <img src="Images/Location-map.jpg" class="img-fluid" alt="">
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box" style="height: 350px; background-color: #e0af38;">
-              <img src="Images/3bhk.jpg" width="100%" height="280" alt="">
-              <h3>3BHK</h3>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box" style="height: 350px; background-color: #e0af38;">
-              <img src="Images/4bhk.jpg" width="100%" height="280" alt="">
-              <h3>4BHK</h3>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box" style="height: 350px; background-color: #e0af38;">
-              <img src="Images/duplex.jpg" width="100%" height="280" alt="">
-              <h3>Duplex</h3>
+            <div class="col-md-6">
+              <h2>Premium Connectivity</h2>
+              <ul>
+                <li>3000+ families are already living in Sector 63A</li>
+                <li>DPS, Amity, Suncity, Heritage, Pathways Schools – 10 mins</li>
+                <li>20 mins drive to IGI Airport</li>
+                <li>Fortis, Medanta Medicity, Max, Artemis & CK Birla Hospital – 10 mins</li>
+                <li>Worldmark, Ambience Mall, DLF South Point Mall, Good Earth City Center, Ardee Mall – 10 mins</li>
+                <li>Nearest Rapid Metro Station is 5 mins away at Sector 56, Golf Course Road</li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="contact_details py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 form_back py-5 px-5" style="border: 5px solid #e0af38;background-color: #3e3e3e;">
-            <h3 class="text-white">Fill Out Form Below</h3>
-            <form method="post" id="log">
-              <div id="table-data">
-
+      </section>
+      <section class="testimonial pye-5">
+        <div class="container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide py-5">
+                <img src="Images/testimonial1.jpeg" width="50" height="50" style="border-radius: 50px;" alt="">
+                <div class="star_group">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                </div>
+                <p>
+										These websites provide an online platform where users can access a wealth of information about properties, including reviews, ratings, and feedback from other users.</p>
               </div>
-              <!-- Name input -->
-              <div class="form-outline mb-4">
-                <input type="text" name="name" id="name" placeholder="Enter Name" class="form-control txtNumeric"
-                  required />
+              <div class="swiper-slide py-5">
+                <img src="Images/testimonial2.jpeg" width="50" height="50" style="border-radius: 50px;" alt="">
+                <div class="star_group">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                </div>
+                <p>
+										
+                  They serve as a powerful tool for consumers, helping them make informed decisions and avoid fraudulent practices in the industry.</p>
               </div>
-
-              <div class="form-outline mb-4">
-                <input type="text" name="phone" maxlength="10" id="phone" placeholder="Phone Number"
-                  class="form-control numbersOnly" required />
+              <div class="swiper-slide py-5">
+                <img src="Images/testimonial3.jpeg" width="50" height="50" style="border-radius: 50px;" alt="">
+                <div class="star_group">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                </div>
+                <p>
+										
+                  These websites have helped to bridge the gap between buyers and sellers, providing a more efficient and transparent market for real estate transactions.</p>
               </div>
-
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" name="email" id="email" placeholder="Email" class="form-control" required />
+              <div class="swiper-slide py-5">
+                <img src="Images/testimonial4.jpeg" width="50" height="50" style="border-radius: 50px;" alt="">
+                <div class="star_group">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                  <img src="Images/star.png" width="18px" alt="">
+                </div>
+                <p>
+										
+                  India's real estate market has undergone significant changes in recent years, with the emergence of online portals and the increasing popularity of e-commerce.</p>
               </div>
-
-              <!-- Message input -->
-              <div class="form-outline mb-4">
-                <textarea class="form-control" name="message" id="message" placeholder="Message" rows="4"
-                  required></textarea>
-              </div>
-
-              <!-- Submit button -->
-              <div class="text-center">
-                <input style="background-color:#e0af38; color:white; padding:10px;border: none;" type="submit"
-                  class="col-md-5 btn-block mb-4 text-white text-capitalize" value="Send" name="btnsubmit"
-                  id="btnsubmit">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-6 px-0 d-flex justify-content-center flex-column">
-            <iframe
-              src="https://regiohelden.de/google-maps/map_en.php?width=330&amp;height=220&amp;hl=en&amp;q=Virat Krishnav, Vaishali Nagar West, Shree Ram Nagar - A, Lalarpura, Jaipur, Rajasthan 302034&amp;ie=UTF8&amp;t=&amp;z=9&amp;iwloc=A&amp;output=embed"
-              width="100%" height="450px" style="border: 0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <section class="foot py-3">
-      <div class="container">
-          <div class="col-12 text-center">
-            <p class="text-white py-1">Copyright 2023@Virat Group. All rights reserved. <span>Privacy Policy</span></p>
-            <p class="text-white py-1">Powered by - Cogent 360 Solutions Pvt. Ltd</p>
+      </section>
+      <section class="contact pye-5">
+        <div class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <span>We'd love to hear from you</span>
+                <h2>Contact Us</h2>
+                <p>Chetan Realtors is an authorized channel partner of Signature Global. Chetna Realtors is a RERA registered Gurgaon-based 28-year-old premium property consultant.</p>
+                <h5>Reach us through</h5>
+                <ul>
+                  <li>1st Floor, Landmark Cyber Park, Sector 67, Golf Course Extension, Gurgaon 122101 - Haryana</li>
+                  <li>+1800 419 3139</li>
+                  <li>Info@chetnarealtors.com</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+    
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-  </footer>
+      </section>
+    </main>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
-  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <!-- Initialize Swiper -->
   <script>
-    $(document).ready(function () {
-      $(".sticky-top").css({ "position": "relative" });
-      $("nav").css({ "display": "none" });
-      $(document).scroll(function () {
-        if ($(window).scrollTop() >= 30) {
-          $(".sticky-top").css({ "position": "fixed" });
-          $("nav").css({ "display": "block" });
-        }
-        else {
-          $(".sticky-top").css({ "position": "relative" });
-          $("nav").css({ "display": "none" });
-        }
-      });
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
