@@ -74,3 +74,26 @@ button a{
     font-weight: 600;
     color: #fff;
 }
+
+.contact p{
+    /* font-weight: 600; */
+    color: #fff;
+}
+
+.contact h5{
+    /* font-weight: 600; */
+    color: #fff;
+}
+
+.contact li{
+    color: #fff;
+}
+
+.floor_plans h2{
+    color: #fa8501;
+}
+
+.floor_plans .box{
+    height: 380px;
+    background-color: #f7f7f7;
+}
