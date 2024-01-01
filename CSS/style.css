@@ -21,7 +21,7 @@ button a{
 }
 
 .banner{
-    background-image: url(../Images/Banner_bg.webp);
+    background: linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.3) ),url(../Images/Banner_bg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,9 +29,6 @@ button a{
     height: 600px;
 }
 
-.banner .col-md-6{
-    height: 600px;
-}
 
 .banner p{
     font-weight: 900;
@@ -41,9 +38,14 @@ button a{
     font-weight: 900;
 }
 
-.banner .text-box{
-    background-color: #5E5E5E;
-    padding: 30px;
+.banner .form_box{
+    background: #ffffff;
+    padding: 30px 50px;
+}
+
+.contact .form_box{
+    background: #fff;
+    padding: 30px 50px;
 }
 
 .amenities{
