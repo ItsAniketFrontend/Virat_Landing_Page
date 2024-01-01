@@ -47,6 +47,11 @@ li{
     font-weight: 400;
 }
 
+label{
+    font-family: rubikmedium;
+    font-weight: 400;
+}
+
 .pye-5{
     padding: 5rem 0rem !important;
 }
