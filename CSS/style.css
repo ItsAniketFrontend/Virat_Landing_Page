@@ -114,7 +114,7 @@ button a{
 
 .contact{
     background:linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.3) ), url(../Images/Banner_contact.jpg);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    
 }
