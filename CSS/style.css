@@ -52,8 +52,9 @@ label{
     font-weight: 400;
 }
 
-label input{
-   font-weight: bolder;
+a{
+    font-family: rubikmedium;
+    font-weight: 500;
 }
 
 .pye-5{
@@ -73,14 +74,8 @@ button a{
 }
 
 .banner{
-    background: linear-gradient(rgb(0,0,0,0.6),rgba(0,0,0,0.3) ),url(../Images/Banner_bg.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 6rem;
-    height: 600px;
+    padding-top: 6rem;
 }
-
 
 .banner p{
     font-weight: 900;
