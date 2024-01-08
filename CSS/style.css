@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: rubiksemibold;
-    src: url(../CSS/Rubik-SemiBold.ttf);
+    src: url(../CSS/Renner400.otf);
 }
 
 h2{
@@ -36,7 +36,7 @@ p{
 }
 
 h3{
-    font-family: rubikmedium;
+    font-family: rubiksemibold;
     font-size: 18px !important;
 
 }
