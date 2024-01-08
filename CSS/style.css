@@ -158,3 +158,10 @@ button a{
     rotate: 90deg;
     z-index: 10;
 }
+
+@media (max-width:576px) {
+    .table{
+        border: 2px solid grey;
+        padding: 10px 0px;
+    }
+}
