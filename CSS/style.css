@@ -146,3 +146,7 @@ button a{
     height: 380px;
     background-color: #f7f7f7;
 }
+
+#location h2{
+    color: #fa8501;
+}
