@@ -150,3 +150,10 @@ button a{
 #location h2{
     color: #fa8501;
 }
+
+.side_button{
+    position: fixed;
+    top: 400px;
+    right: -25px;
+    rotate: 90deg;
+}
