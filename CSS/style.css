@@ -19,6 +19,11 @@
     src: url(../CSS/Renner400.otf);
 }
 
+@font-face {
+    font-family: regular;
+    src: url(../CSS/Outfit-Regular.ttf);
+}
+
 h2{
     font-family: rubiksemibold !important;
     font-weight: 600 !important;
@@ -30,8 +35,8 @@ h1{
 }
 
 p{
-    font-family: rubikregular;
-    font-size: 15px;
+    font-family: regular !important;
+    font-size: 17px;
     font-weight: 400;
 }
 
@@ -101,7 +106,9 @@ button a{
 
 .amenities .box{
     background-color: #ffffff;
-    padding: 60px 30px;
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery{
@@ -153,9 +160,8 @@ button a{
 
 .side_button{
     position: fixed;
-    top: 400px;
-    right: -25px;
-    rotate: 90deg;
+    bottom: 0px;
+    right: 10px;
     z-index: 10;
 }
 
